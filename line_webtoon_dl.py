@@ -67,11 +67,11 @@ def main():
     #~ story = 'http://www.webtoons.com/en/challenge/broke-ninjas/too-much/viewer?title_no=32404&episode_no=110' # broke ninjas – 110
     #~ story = 'http://www.webtoons.com/en/challenge/chicks/take-him-away/viewer?title_no=20994&episode_no=20' # chicks – 20
 
-
+    start_from = 0
 
     get_all_pages(story)
 
-    pages = get_all_comics()[31:]
+    pages = get_all_comics()[start_from:]
 
     for page in pages:
         #~ print(page)
